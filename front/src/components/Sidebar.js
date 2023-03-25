@@ -31,6 +31,11 @@ const Sidebar = ({ closeToggle }) => {
             <span>HOME</span>
             </Link>
             </div>
+
+            
+
+
+
             <Link
           to={`user/:id`}
           className="flex my-5 mb-3 gap-2 p-2 items-center bg-white rounded-lg shadow-lg mx-3"
