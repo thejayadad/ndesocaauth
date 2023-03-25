@@ -34,6 +34,7 @@ const Home = () => {
     </div>
     <div className="pb-2 flex-1 h-screen overflow-y-scroll">
             <Routes>
+              <Route path='/' element={<Note />} />
             <Route path='/user/:id' element={<User />} />
             </Routes>
     </div>
