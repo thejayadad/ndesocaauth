@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import User from '../components/User'
 import { Routes, Route } from 'react-router-dom';
+import Masonry from 'react-masonry-css';
 
 const Home = () => {
     const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -33,10 +34,10 @@ const Home = () => {
         )}
     </div>
     <div className="pb-2 flex-1 h-screen overflow-y-scroll">
-            <Routes>
-              <Route path='/' element={<Note />} />
-            <Route path='/user/:id' element={<User />} />
-            </Routes>
+      <Routes>
+      <Route path='/' element={<Note />} />
+      <Route path='/user/:id' element={<User />} />
+      </Routes>
     </div>
     </div>
   )
